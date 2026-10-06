@@ -258,53 +258,7 @@ footer{
 <footer>
   <p>© 2026 Auriolous Watch. All Rights Reserved.</p>
 </footer>
-<!-- Login Page -->
-<div id="loginPage" style="display:flex;
 
-  <div style="max-width:400px; margin:auto; background:#151515; padding:30px; border-radius:18px; border:1px solid #292929;">
-
-    <h2 style="font-size:30px; margin-bottom:10px;">Auriolous Watch</h2>
-
-    <p style="color:#aaa; margin-bottom:25px;">
-      Login to your account
-    </p>
-
-    <input
-      type="email"
-      id="loginEmail"
-      placeholder="Email Address"
-      style="width:100%; padding:14px; margin-bottom:15px; border-radius:10px; border:1px solid #444; background:#0d0d0d; color:white;"
-    >
-
-    <input
-      type="password"
-      id="loginPassword"
-      placeholder="Password"
-      style="width:100%; padding:14px; margin-bottom:20px; border-radius:10px; border:1px solid #444; background:#0d0d0d; color:white;"
-    >
-
-    <button
-      onclick="loginUser()"
-      style="width:100%; padding:14px; border:0; border-radius:25px; background:white; color:black; font-size:16px; font-weight:bold;"
-    >
-      Login
-    </button>
-
-    <p id="loginMessage" style="color:#aaa; margin-top:15px;"></p>
-
-  </div>
-</div>
-
-<script>
-function loginUser() {
-  const email = document.getElementById("loginEmail").value;
-  const password = document.getElementById("loginPassword").value;
-  const message = document.getElementById("loginMessage");
-
-  if (email === "" || password === "") {
-    message.textContent = "Please enter email and password.";
-    return;
-  }
 
   message.textContent = "Login successful!";
 }
